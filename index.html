@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ateliê Aurora — Portfólio Interativo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="page">
+    <header class="top-bar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <div>
+          <p class="brand-title">Ateliê Aurora</p>
+          <p class="brand-subtitle">Designer de Experiências & Interfaces</p>
+        </div>
+      </div>
+      <div class="status">
+        <span>Portfólio web interativo</span>
+        <span class="status-pill">Disponível para projetos</span>
+      </div>
+    </header>
+
+    <main class="desktop">
+      <section class="hero">
+        <div>
+          <h1>Uma área de trabalho conceitual para explorar um portfólio premium.</h1>
+          <p>
+            Uma experiência inspirada em desktops modernos, porém com linguagem editorial e
+            narrativa web. Navegue pelos painéis e descubra projetos, serviços e processos.
+          </p>
+        </div>
+        <div class="hero-card">
+          <h3>Atalhos criativos</h3>
+          <ul>
+            <li>⚡ Projetos abrem em um painel imersivo.</li>
+            <li>🧩 Serviços e processo em camadas.</li>
+            <li>✨ Design com profundidade e materialidade.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="concept-icons">
+        <button class="icon-card" data-open="about">
+          <span>Sobre</span>
+          <small>Bio + stack</small>
+        </button>
+        <button class="icon-card" data-open="projects">
+          <span>Projetos</span>
+          <small>Estudos e cases</small>
+        </button>
+        <button class="icon-card" data-open="services">
+          <span>Serviços</span>
+          <small>Design & direção</small>
+        </button>
+        <button class="icon-card" data-open="process">
+          <span>Processo</span>
+          <small>Método de trabalho</small>
+        </button>
+        <button class="icon-card" data-open="contact">
+          <span>Contato</span>
+          <small>Vamos criar</small>
+        </button>
+      </section>
+
+      <section class="panels">
+        <article id="about" class="panel" data-draggable>
+          <header class="panel-header">
+            <h2>Sobre</h2>
+            <button class="panel-close" data-close>Fechar</button>
+          </header>
+          <div class="panel-body">
+            <p>
+              Sou designer de interfaces e experiências digitais com foco em produtos premium.
+              Combino direção de arte, estratégia e prototipagem para criar sistemas que parecem
+              vivos, sensíveis e memoráveis.
+            </p>
+            <div class="stack">
+              <div>
+                <h4>Posicionamento</h4>
+                <p>UI Designer sênior focada em plataformas e experiências imersivas.</p>
+              </div>
+              <div>
+                <h4>Stack principal</h4>
+                <ul>
+                  <li>Design System & UI Kit</li>
+                  <li>Direção de Arte Digital</li>
+                  <li>Motion & Micro-interações</li>
+                  <li>Prototipagem e DesignOps</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="projects" class="panel" data-draggable>
+          <header class="panel-header">
+            <h2>Projetos</h2>
+            <button class="panel-close" data-close>Fechar</button>
+          </header>
+          <div class="panel-body">
+            <div class="project-grid">
+              <button class="project-card" data-project="aurora">
+                <h3>Aurora Banking</h3>
+                <p>App financeiro com foco em experiências sensíveis.</p>
+              </button>
+              <button class="project-card" data-project="luma">
+                <h3>Luma Studio</h3>
+                <p>Plataforma para criadores e gestores de conteúdo.</p>
+              </button>
+              <button class="project-card" data-project="vanta">
+                <h3>Vanta Mobility</h3>
+                <p>Dashboard de mobilidade elétrica.</p>
+              </button>
+              <button class="project-card" data-project="atlas">
+                <h3>Atlas Culture</h3>
+                <p>Ecossistema para museus e instituições.</p>
+              </button>
+              <button class="project-card" data-project="nimbus">
+                <h3>Nimbus OS</h3>
+                <p>Camada visual para IoT residencial.</p>
+              </button>
+              <button class="project-card" data-project="orion">
+                <h3>Orion Health</h3>
+                <p>Plataforma clínica com insights preditivos.</p>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article id="services" class="panel" data-draggable>
+          <header class="panel-header">
+            <h2>Serviços</h2>
+            <button class="panel-close" data-close>Fechar</button>
+          </header>
+          <div class="panel-body">
+            <div class="service-grid">
+              <div class="service-card">
+                <h3>Direção de Interface</h3>
+                <p>Criação de linguagem visual, design systems e consistência multi-plataforma.</p>
+              </div>
+              <div class="service-card">
+                <h3>Experiência & Produto</h3>
+                <p>Mapeamento de jornadas, discovery e protótipos de alta fidelidade.</p>
+              </div>
+              <div class="service-card">
+                <h3>Motion & Microinteração</h3>
+                <p>Transições, feedbacks táteis e animações que reforçam a narrativa.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="process" class="panel" data-draggable>
+          <header class="panel-header">
+            <h2>Processo</h2>
+            <button class="panel-close" data-close>Fechar</button>
+          </header>
+          <div class="panel-body">
+            <ol class="process-steps">
+              <li>
+                <h4>Imersão & Diagnóstico</h4>
+                <p>Workshops, entrevistas e leitura de dados para definir a direção.</p>
+              </li>
+              <li>
+                <h4>Exploração Criativa</h4>
+                <p>Moodboards, wireframes e protótipos rápidos para testar caminhos.</p>
+              </li>
+              <li>
+                <h4>Design Sistêmico</h4>
+                <p>Componentes, tokens e guidelines para escalabilidade consistente.</p>
+              </li>
+              <li>
+                <h4>Entrega Viva</h4>
+                <p>Handoff detalhado, motion specs e acompanhamento na implementação.</p>
+              </li>
+            </ol>
+          </div>
+        </article>
+
+        <article id="contact" class="panel" data-draggable>
+          <header class="panel-header">
+            <h2>Contato</h2>
+            <button class="panel-close" data-close>Fechar</button>
+          </header>
+          <div class="panel-body">
+            <form class="contact-form">
+              <label>
+                Nome
+                <input type="text" placeholder="Seu nome" />
+              </label>
+              <label>
+                Email
+                <input type="email" placeholder="voce@email.com" />
+              </label>
+              <label>
+                Mensagem
+                <textarea rows="4" placeholder="Conte sobre o desafio"></textarea>
+              </label>
+              <button type="submit">Enviar mensagem</button>
+            </form>
+            <div class="contact-links">
+              <a href="mailto:contato@atelieaurora.com">Email</a>
+              <a href="https://wa.me/5500000000000">WhatsApp</a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://dribbble.com" target="_blank" rel="noreferrer">Dribbble</a>
+            </div>
+          </div>
+        </article>
+
+        <article id="project-viewer" class="panel panel-viewer">
+          <header class="panel-header">
+            <h2 id="viewer-title">Projeto</h2>
+            <button class="panel-close" data-close>Fechar</button>
+          </header>
+          <div class="panel-body">
+            <div class="viewer-meta">
+              <p id="viewer-description"></p>
+              <div class="viewer-tags" id="viewer-tags"></div>
+            </div>
+            <div class="viewer-layout">
+              <div class="viewer-image"></div>
+              <div>
+                <h4>Contexto</h4>
+                <p id="viewer-context"></p>
+                <h4>Solução</h4>
+                <p id="viewer-solution"></p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <nav class="dock">
+      <button class="dock-item is-active" data-open="about">Sobre</button>
+      <button class="dock-item" data-open="projects">Projetos</button>
+      <button class="dock-item" data-open="services">Serviços</button>
+      <button class="dock-item" data-open="process">Processo</button>
+      <button class="dock-item" data-open="contact">Contato</button>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
